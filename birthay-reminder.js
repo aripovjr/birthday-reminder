@@ -7,7 +7,7 @@ function List({people}){
             people.map(person=>{
             const {id, age, name, image} = person
            return(
-                <div className='person-container'>
+                <div key='id' className='person-container'>
                     <img src={image}/>
                     <div className='info'>
                         <h2>{name}</h2>
